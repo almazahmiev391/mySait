@@ -1,0 +1,108 @@
+
+
+/* Если вдруг слайдер будет внутри flex элемента или он сам будет flex элементом 
+то нужно использовать min-width:0; */
+
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+
+/* Конкретный слайдер */
+
+.slider_top{
+	padding: 0 60px;
+	position: relative;
+}
+.slider_top .slick-arrow{
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	font-size: 0px;
+	width: 30px;
+	height: 30px;
+	border:0;
+	outline: none;
+	cursor: pointer;
+	margin-top: -30px;
+}
+
+
+
+.slider_top .slick-arrow.slick-prev{
+	background: url(../img/left-arrow.png) 0 0 / 100% no-repeat;
+	left:0px;
+}
+.slider_top .slick-arrow.slick-next{
+	background: url(../img/right-arrow.png) 0 0 / 100% no-repeat;
+	right:0px;
+}
+.slider_top .slick-dots{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.slider_top .slick-dots li{
+	list-style: none;
+	margin: 0px 10px;
+
+}
+.slider_top .slick-dots button{
+	font-size: 0px;
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	padding: 0;
+	border-radius: 50%;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+}
+.slider_top .slick-dots li.slick-active button{
+	    background-color: #008170;
+    padding: 0;
+    border: 1px solid #008170;
+
+}
+
+
+.slider__big.slick-list{
+	overflow: hidden;
+}
